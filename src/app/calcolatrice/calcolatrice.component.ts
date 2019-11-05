@@ -6,13 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./calcolatrice.component.css']
 })
 export class CalcolatriceComponent implements OnInit {
-
+  espressione: string='';
+  
   constructor() { }
 
   ngOnInit() {
   }
 
-  addNumber(){
-    
+  addNumber(numero){
+    this.espressione += numero;
   }
+
 }
