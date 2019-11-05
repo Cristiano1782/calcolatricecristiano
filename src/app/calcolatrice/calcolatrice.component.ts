@@ -12,4 +12,7 @@ export class CalcolatriceComponent implements OnInit {
   ngOnInit() {
   }
 
+  addNumber(){
+    
+  }
 }
