@@ -1,34 +1,34 @@
 <h1>Calcolatrice</h1>
 <div class='container'>
-  <input class="risultato" type="text" [(ngModel)]="risultato">
+  <input class="risultato" type="text" [(ngModel)]="espressione">
 	<p>
 		<button type="button" class="btn btn-danger buttons">CE</button>
 		<button type="button" class="btn btn-danger buttons">C</button>
 		<button type="button" class="btn btn-danger buttons"><-</button>
-		<button type="button" class="btn btn-primary buttons">/</button>
+		<button type="button" class="btn btn-primary buttons"(click)="add('/')">/</button>
 	</p>
 	<p>
-		<button type="button" class="btn btn-outline-dark buttons">7</button>
-		<button type="button" class="btn btn-outline-dark buttons">8</button>
-		<button type="button" class="btn btn-outline-dark buttons">9</button>
-		<button type="button" class="btn btn-primary buttons">X</button>
+		<button type="button" class="btn btn-outline-dark buttons"(click)="add('7')">7</button>
+		<button type="button" class="btn btn-outline-dark buttons"(click)="add('8')">8</button>
+		<button type="button" class="btn btn-outline-dark buttons"(click)="add('9')">9</button>
+		<button type="button" class="btn btn-primary buttons"(click)="add('*')">X</button>
 	</p>
 	<p>
-		<button type="button" class="btn btn-outline-dark buttons">4</button>
-		<button type="button" class="btn btn-outline-dark buttons">5</button>
-		<button type="button" class="btn btn-outline-dark buttons">6</button>
-		<button type="button" class="btn btn-primary buttons">-</button>
+		<button type="button" class="btn btn-outline-dark buttons"(click)="add('4')">4</button>
+		<button type="button" class="btn btn-outline-dark buttons"(click)="add('5')">5</button>
+		<button type="button" class="btn btn-outline-dark buttons"(click)="add('6')">6</button>
+		<button type="button" class="btn btn-primary buttons"(click)="add('-')">-</button>
 	</p>
 	<p>
-		<button type="button" class="btn btn-outline-dark buttons">1</button>
-		<button type="button" class="btn btn-outline-dark buttons">2</button>
-		<button type="button" class="btn btn-outline-dark buttons">3</button>
-		<button type="button" class="btn btn-primary buttons">+</button>
+		<button type="button" class="btn btn-outline-dark buttons"(click)="add('1')">1</button>
+		<button type="button" class="btn btn-outline-dark buttons"(click)="add('2')">2</button>
+		<button type="button" class="btn btn-outline-dark buttons"(click)="add('3')">3</button>
+		<button type="button" class="btn btn-primary buttons"(click)="add('+')">+</button>
 	</p>
 	<p>
-		<button type="button" class="btn btn-outline-primary buttons">+-</button>
-		<button type="button" class="btn btn-outline-dark buttons">0</button>
-		<button type="button" class="btn btn-outline-primary buttons">,</button>
+		<button type="button" class="btn btn-outline-primary buttons"(click)="add('-')">+-</button>
+		<button type="button" class="btn btn-outline-dark buttons"(click)="add('0')">0</button>
+		<button type="button" class="btn btn-outline-primary buttons"(click)="add('.')">,</button>
 		<button type="button" class="btn btn-success buttons">=</button>
 	</p>
 </div>
