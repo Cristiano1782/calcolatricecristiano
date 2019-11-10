@@ -1,10 +1,11 @@
 <h1>Calcolatrice</h1>
 <div class='container'>
   <input class="risultato" type="text" [(ngModel)]="espressione">
+  
 	<p>
-		<button type="button" class="btn btn-danger buttons">CE</button>
-		<button type="button" class="btn btn-danger buttons">C</button>
-		<button type="button" class="btn btn-danger buttons"><-</button>
+		<button type="button" class="btn btn-danger buttons" (click)="cancella()">CE</button>
+		<button type="button" class="btn btn-danger buttons"(click)="cancella()">C</button>
+		<button type="button" class="btn btn-danger buttons"(click)="meno()"><-</button>
 		<button type="button" class="btn btn-primary buttons"(click)="add('/')">/</button>
 	</p>
 	<p>
@@ -29,6 +30,6 @@
 		<button type="button" class="btn btn-outline-primary buttons"(click)="add('-')">+-</button>
 		<button type="button" class="btn btn-outline-dark buttons"(click)="add('0')">0</button>
 		<button type="button" class="btn btn-outline-primary buttons"(click)="add('.')">,</button>
-		<button type="button" class="btn btn-success buttons">=</button>
+		<button type="button" class="btn btn-success buttons"(click)="uguale()">=</button>
 	</p>
 </div>
